@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: url("imgaes/banner2.jpg") center/cover no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.factory_barner {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.us {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.us h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home_link {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home_link{
+    display: flex;
+    justify-content: center;
+}
+.about_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.about_link li a{
+    color: orange;
+    cursor: pointer;
+    text-decoration: none;
+}
+.about_company{
+    display: block;
+}
+.about_factory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company_discription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.75rem;
+    margin: 0 0 3rem 0;
+    gap: 1rem;
+}
+.company_discription h6{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(129, 132, 138);
+    padding: 0;
+    margin: 0;
+}
+.company_discription h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    padding: 0;
+    margin: 0;
+}
+.company_discription p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    color: rgb(129, 132, 138);
+    padding: 0;
+    margin: 0;
+}
+.company_discription_img{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+}
+.company_discription_img img{
+    height: 300px;
+    border-radius: 0.7rem;
+    width: 250px;
+}
+
+.about_progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 1rem;
+    background-color: rgb(241, 243, 248);
+}
+.company_progres{
+    display: flex;
+    padding: 0 0.75rem;
+    margin: 0 0 3rem 0;
+    flex-direction: column;
+    gap: 1rem;
+}
+.progres_precentage{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 200px;
+}
+.progres_precentage h6{
+    display: grid;
+    font-size: 0.96rem;
+    font-weight: 700;
+    grid-template-columns: 156.891px 28.7031px;
+    line-height: 1.125rem;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 185.594px;
+    color: rgb(34, 34, 34);
+}
+.progres{
+    display: flex;
+    height: 15.5938px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 10px;
+    padding:  0.2rem 0;
+}
+.progress-bar{
+    background-color: rgb(255, 153, 0);
+    width: 70%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    padding: 0.1rem 0;
+}
+.about_project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about_project .project_img img{
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+.about_project .client{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.accordion{
+    gap: 2rem;
+}
+.client h6{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(129, 132, 138);
+    padding: 0;
+    margin: 0;
+}
+.client h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(34, 34, 34);
+    padding: 0;
+    margin: 0;
+}
+.client .accordion-item h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: lowercase;
+    color: rgb(34, 34, 34);
+    padding: 0;
+    margin: 0;
+}
+.client .accordion-item p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-transform: lowercase;
+    color: rgb(129, 132, 138);
+    padding: 0;
+    margin: 0;
+}
