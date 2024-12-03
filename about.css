@@ -6,6 +6,9 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+}
 .container {
     background: url("imgaes/banner2.jpg") center/cover no-repeat;
     width: 100%;
@@ -57,13 +60,19 @@ body {
     text-decoration: none;
 }
 .about_company{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 .about_factory{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
+    /* flex-direction: column; */
 }
 .company_discription{
     display: flex;
@@ -101,19 +110,13 @@ body {
     padding: 0;
     margin: 0;
 }
-.company_discription_img{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-
-}
 .company_discription_img img{
-    height: 300px;
-    border-radius: 0.7rem;
-    width: 250px;
+    /* height: 300px; */
+    border-radius: 1rem;
+    /* width: 250px; */
+    width: 50%;
+    height: 100%;
+
 }
 
 .about_progress{
@@ -124,6 +127,7 @@ body {
     text-align: left;
     gap: 1rem;
     background-color: rgb(241, 243, 248);
+    margin-top: 1rem;
 }
 .company_progres{
     display: flex;
@@ -174,20 +178,29 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 .about_project .project_img img{
     width: 100%;
     /* justify-content: center; */
     align-items: center;
+    border-radius: 1rem;
 }
 .about_project .client{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    padding: 0.1rem 0;
 }
 .accordion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
+    padding: 0.1rem 0;
+    border: 1rem solid #fff;
+    box-shadow: 10px 10px 10px rgba(108, 110, 117, 0.9);
 }
 .client h6{
     font-size: 0.875rem;
