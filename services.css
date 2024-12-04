@@ -305,8 +305,84 @@ margin-bottom: 27px;
     height: 152px;
 }
 
+footer{
+    height: 499px;
+    background-color:#111111;
+    width: 100%;
+    margin-top: 90px;
+    color: white;
+}
+.footers-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-grid{
+    padding-top:80px ;
+}
+.footer-grid h3{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.footer-grid p{
+    font-family: "Source Sans 3", sans-serif; font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+    color: 
+    rgb(129, 132, 138);
+    margin-bottom: 70px;
+}
+.social-icon i{
+    background-color: #ff9900;
+    padding: 10px;
+}
+.footer-grid a{
+    color: rgb(129, 132, 138);;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: my font2;
 
-
+}
+.poster-flex{
+    display: flex;
+    gap: 15px;
+}
+.poster-flex img{
+    width: 87.5px;
+    height: 58.3px;
+}
+.right h4{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: my font2;
+}
+.copy-right{
+    display: flex;
+    gap: 410px;
+}
+.copy-right p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "Source Sans 3", sans-serif; font-family: "Source Sans 3", sans-serif;
+    color: #81848a;
+}
+.copy-right a{
+    text-decoration: none;
+    color: #ff9900;
+}
+.privacy-trms {
+    display: flex;
+    gap: 10px;
+}
 @media(max-width:660px){
     .desktob-menue{
         display: none;
@@ -432,7 +508,6 @@ margin-bottom: 27px;
       gap:50px;
       /* margin-right: 200px; */
         
-
     }
     .section3-header span{
         padding-left: 130px;
@@ -458,4 +533,24 @@ margin-bottom: 27px;
         height: 178px;
         padding: 35px;
     }
+    .footers-grid{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        height: 1642px;
+    }
+    .copy-right{
+        display: block;
+        
+    }
+    .copy-right p{
+        margin-bottom: 30px;
+        margin-left: 10px;
+        font-size: 17px;
+        text-align: left;
+    }
+   .privacy-trms p{
+    margin-left: 40px;
+    gap: 10px;
+   }
 }
