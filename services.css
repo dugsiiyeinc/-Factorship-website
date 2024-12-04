@@ -366,7 +366,7 @@ footer{
 }
 .copy-right{
     display: flex;
-    gap: 410px;
+    gap: 240px;
 }
 .copy-right p{
     font-weight: 400;
