@@ -91,6 +91,7 @@ img{
     color: rgb(129, 132, 138);
     padding: 0;
     margin: 0;
+    
 }
 .company_discription h3{
     font-size: 1.5rem;
@@ -100,6 +101,7 @@ img{
     color: rgb(34, 34, 34);
     padding: 0;
     margin: 0;
+    /* align-self: center; */
 }
 .company_discription p{
     font-size: 1rem;
@@ -109,6 +111,7 @@ img{
     color: rgb(129, 132, 138);
     padding: 0;
     margin: 0;
+    /* align-self: center; */
 }
 .company_discription_img img{
     /* height: 300px; */
@@ -237,4 +240,57 @@ img{
     color: rgb(129, 132, 138);
     padding: 0;
     margin: 0;
+}
+.about_info{
+    background: url("imgaes/banner2.jpg") center/cover no-repeat;
+    width: 100%;
+    position: relative;
+}
+.industrial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    color: #fff;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+.indust_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.indust_info h5{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    color: rgb(129, 132, 138);
+}
+.indust_info h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    color:rgb(255, 255, 255)
+}
+.comment{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    width: 314px;
+    color:rgb(129, 132, 138)
 }
