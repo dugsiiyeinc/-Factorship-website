@@ -294,3 +294,40 @@ img{
     width: 314px;
     color:rgb(129, 132, 138)
 }
+.customer_testominal {
+    display: flex;
+}
+
+.testmonial1 {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 1.25rem;
+    text-align: left;
+    flex-direction: column;
+}
+
+.about_team .test_img img{
+    height: 400px;
+    /* max-width: 100%; */
+    width: 400px;
+    border-radius: 1rem;
+}
+.test_des h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35rem;
+    color: rgb(255, 153, 0);
+    padding: 0;
+    margin: 0;
+}
+
+.test_des p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: rgba(8, 8, 8, 0.3);
+    padding: 0;
+    margin: 0;
+}

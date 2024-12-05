@@ -215,7 +215,7 @@ body {
     width: 100%;
 }
 
-.customer {
+.customer .about_team{
     display: flex;
     justify-content: center;
 }
