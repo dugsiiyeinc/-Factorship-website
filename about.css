@@ -12,6 +12,7 @@ img{
 .container {
     background: url("imgaes/banner2.jpg") center/cover no-repeat;
     width: 100%;
+    min-height: 25vh;
     position: relative;
 }
 
@@ -37,10 +38,6 @@ img{
     grid-template-columns: 1fr;
 }
 
-.home_link{
-    display: flex;
-    justify-content: center;
-}
 .about_link{
     display: flex;
     justify-content: center;
@@ -113,13 +110,22 @@ img{
     margin: 0;
     /* align-self: center; */
 }
-.company_discription_img img{
-    /* height: 300px; */
-    border-radius: 1rem;
-    /* width: 250px; */
+.company_discription_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+} 
+.image1 .image2 img{
+    /* border-radius: 1rem;
     width: 50%;
-    height: 100%;
-
+    height: 100%; */
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
 }
 
 .about_progress{
@@ -294,27 +300,75 @@ img{
     width: 314px;
     color:rgb(129, 132, 138)
 }
-.customer_testominal {
+.about_team{
     display: flex;
+    justify-content: center;
 }
 
-.testmonial1 {
+.team {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.team_Info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.team_Info h6 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(129, 132, 138);
+}
+
+.team_Info h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about_team_image {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.team1 {
     display: flex;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
     padding: 1.25rem;
-    text-align: left;
+    text-align: center;
     flex-direction: column;
 }
 
-.about_team .test_img img{
+.team img {
     height: 400px;
-    /* max-width: 100%; */
+    max-width: 100%;
     width: 400px;
     border-radius: 1rem;
 }
-.test_des h3 {
+
+.team_desc p {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: rgb(34, 34, 34);
+}
+
+.team_desc h3 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.35rem;
@@ -323,11 +377,102 @@ img{
     margin: 0;
 }
 
-.test_des p {
+.team_desc p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
     color: rgba(8, 8, 8, 0.3);
     padding: 0;
     margin: 0;
+}
+@media (max-width: 768px) {
+
+    .factory_barner {
+        grid-template-rows: 1fr;
+    }
+
+    .us h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .about_link {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about_factory {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    .company_discription {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .company_discription h3 {
+        font-size: 1.25rem; 
+    }
+
+    .company_discription p {
+        font-size: 0.875rem;
+    }
+
+    .company_discription_img {
+        flex-direction: column;
+    }
+
+    .about_progress {
+        flex-wrap: nowrap; 
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .progres_precentage {
+        width: 100%;
+    }
+
+    .about_project {
+        gap: 1rem;
+    }
+
+    .project_img img {
+        max-width: 90%; 
+        /* margin: 0 auto; */
+    }
+
+    .accordion {
+        padding: 0.5rem; 
+        box-shadow: none; 
+    }
+
+    .about_info {
+        min-height: 15vh;
+    }
+
+    .industrial {
+        flex-direction: column; 
+        gap: 0.75rem;
+    }
+    .about_team_image{
+        flex-direction: column;
+    }
+
+    .indust_info h3 {
+        font-size: 1.25rem; 
+    }
+
+    .team img {
+        width: 90%; 
+        height: auto;
+    }
+
+    .team_Info h3 {
+        font-size: 1.75rem; 
+    }
+
+    .team_desc p {
+        font-size: 0.875rem; 
+    }
 }
