@@ -350,6 +350,9 @@ footer{
     font-family: my font2;
 
 }
+.footer-grid a:hover{
+    color: #ff9900;
+}
 .poster-flex{
     display: flex;
     gap: 15px;
@@ -363,6 +366,10 @@ footer{
     line-height: 28px;
     font-weight: 600;
     font-family: my font2;
+}
+.right h4:hover{
+    color: #ff9900;
+
 }
 .copy-right{
     display: flex;
