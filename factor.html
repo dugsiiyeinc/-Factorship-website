@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css">
+  
+    <title>Factorship</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close "data-visible="false"></i>
+            
+        </div>
+        <div class="mobile-logo container">
+            <h1> <span style="color: #efb60a;">Factor</span>ship</h1>
+            <i class="fa-regular fa-moon"></i>
+        </div>
+        <div class="mobile-menu container" data-visible="false">
+                <ul class="menue-link navigation">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <button class="bar1 mobile-bar1"><i class=" fa-solid fa-magnifying-glass"></i></button> 
+                </ul>
+        </div>
+       
+        <div class="container">
+            <div class="desktob-menue">
+                <h1> <span style="color: #efb60a;">Factor</span>ship</h1>
+                <div class="menue-link">
+                    <ul class="navigation">
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a  href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a  href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="bars">
+                   <button class="bar1"><i class=" fa-solid fa-magnifying-glass"></i></button> 
+                    <i class="fa-regular fa-moon"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container contant">
+            <span>Simply certified.</span><br>
+            <h3>Reliable engineering<br> takes many forms</h3>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+            <P class="hide-mobile"> Ultrices in ligula,semper at <br> tempufddfel. </p><br>
+            <button class="btn"><a href="">Read More</a></button>
+            <i class=" fas fa-angle-double-right ms-2"></i>                                
+        </div>
+    </div>
+    <div class="small-bar container">
+        <div class="number1">
+            <h6>3500</h6>
+            <p>Factories</p>
+        </div>
+        <div class="number1">
+            <h6>4360</h6>
+            <p>Projects</p>
+        </div>
+    </div>
+   
+
+
+    
+    <script>
+         const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const icons = document.querySelectorAll("i");
+
+    hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute('data-visible');
+        if (isVisible == "true") {
+            // qari hiding
+            mobileMenu.setAttribute('data-visible', "false");
+            icons[0].setAttribute('data-visible', "true");
+            icons[1].setAttribute('data-visible', "false");
+        } else if (isVisible == "false") {
+            // soo bandhig showing
+            mobileMenu.setAttribute('data-visible', "true");
+            icons[0].setAttribute('data-visible', "false");
+            icons[1].setAttribute('data-visible', "true");
+        }
+    });
+    </script>
+</body>
+</html>
